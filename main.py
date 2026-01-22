@@ -1,7 +1,16 @@
 import pandas as pd
+from summary_utils import summarizeData
 
-file_path = "sample.csv"
+def main():
+    # set the file path 
+    file_path = "sample.csv"
+    summarizeData(file_path)
 
-df = pd.read_csv(file_path)
+if __name__ == "__main__":
+    main()
 
-print(df)
+##file_path = "sample.csv"
+
+##df = pd.read_csv(file_path)
+
+##print(df)
